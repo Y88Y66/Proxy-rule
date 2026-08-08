@@ -5,8 +5,8 @@ Personal routing rules for proxy clients. This repository contains only public r
 ## Structure
 
 - `shadowrocket/default.conf` - active Shadowrocket configuration.
-- `v2ray/` - reserved for v2rayN and v2rayNG routing rules in their JSON format.
-- `backups/` - dated snapshots before major changes.
+- `shadowrocket/backups/` - dated Shadowrocket snapshots before major changes.
+- `v2ray/` - v2rayN and v2rayNG routing rules. Its future active rule file and snapshots are maintained inside this folder.
 
 ## Active Shadowrocket URL
 
@@ -16,6 +16,6 @@ https://raw.githubusercontent.com/Y88Y66/Proxy-rule/main/shadowrocket/default.co
 
 ## Maintenance
 
-1. Update the client-specific file in its own folder.
-2. Create a dated snapshot in `backups/` before a substantial rewrite.
+1. Update each client only inside its own folder.
+2. Before a substantial rewrite, create a dated snapshot in that client's `backups/` folder.
 3. Never commit proxy nodes, subscription URLs, tokens, passwords, or certificates.
